@@ -1,6 +1,6 @@
 'user strict';
 console.log(age);
-// 2. Variable
+// 2. Variable, rw(read/write) 메모리에 읽고 쓰기 가능
 // let (added in ES6) ES6에 추가되었음
 
 let name = 'test';
@@ -39,7 +39,7 @@ console.log(age);
 // 이러한 단점으로 var를 사용해서는 안됨.
 
 
-// 3. Constant
+// 3. Constant, r (readOnly)
 // 한 번 할당하면 값이 바뀌지 않음을 뜻함.
 // 값을 선언함과 동시에 할당하면, 절대 변경이 안됨
 // 값이 변경되는건 Mutable data type이라고 부름 -> let키워드가 해당됨.
@@ -139,3 +139,14 @@ console.log(`value: ${text}, type: ${typeof text}`);
 // object, real-life object, data structure
 const ellie = {name: 'ellie', age: 20};
 ellie.age = 21; // 이렇게 변경 가능함 -> ellie라는 오브젝트가 const임에도 안에 값은 수정 가능
+
+//************************************************************************************* */
+
+/**
+ * primitive와 object는 메모리에 저장되는 방식에 차이가 있음
+ * primitive는 값 자체가 메모리에 저장됨
+ * object는 메모리에 한번에 다 올라갈 수 없음, ref(레퍼런스)가 메모리에 올라가고, 실제 오브젝트를 
+ * 가리키는 레퍼런스가 메모리에 저장된다!
+ * 
+ * 자바스크립트에서 모든 오브젝트는 mutable data type임
+ */
