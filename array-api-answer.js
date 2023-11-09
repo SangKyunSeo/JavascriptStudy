@@ -95,10 +95,14 @@ const students = [
   // reduceRight : 거꾸로 호출이 되면서 실행됨 -> reduce랑 반대로 실행된다고 보면됨
   // curr : 배열의 요소값을 전달 받고
   // prev : 초기 값을 전달 받고 이전값을 전달함
+  console.log('--------------------------------');
   const result = students.reduce((prev, curr) => {
+    console.log(prev + "," + curr.score);
     return prev + curr.score;
   }, 0);
+  console.log(result);
   console.log(result / students.length);
+  console.log('--------------------------------');
 }
 
 // Q10. make a string containing all the scores

@@ -157,6 +157,7 @@ const add = (a, b) => a + b;
 const simpeMulti = (a, b) => { // 이렇게 block을 만들어도 되지만, block을 만들었을 경우 무조건 return이 있어야함
   return a * b;
 }
+const test = a => a + 100;
 
 // IIFE : Immediately Invoked Funciton Expression = 선언과 동시에 호출
 (function helli(){
